@@ -7,9 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B00DB2B32C05000C00F67CB3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00DB2B22C05000C00F67CB3 /* Constants.swift */; };
+		B039CEBD2C04DF4700C02483 /* GistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B039CEBC2C04DF4700C02483 /* GistViewModel.swift */; };
+		B039CEBF2C04DFD800C02483 /* ClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B039CEBE2C04DFD800C02483 /* ClientProtocol.swift */; };
+		B039CEC32C04E01400C02483 /* GistAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B039CEC22C04E01400C02483 /* GistAPIClient.swift */; };
+		B039CEC52C04E7CA00C02483 /* GistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B039CEC42C04E7CA00C02483 /* GistModel.swift */; };
+		B039CEC72C04EEB300C02483 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B039CEC62C04EEB300C02483 /* DataError.swift */; };
+		B0549F062C0510E700BA388B /* GistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0549F052C0510E700BA388B /* GistCell.xib */; };
+		B0549F0D2C05193F00BA388B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B0549F0C2C05193F00BA388B /* Kingfisher */; };
+		B0C9B1A22C0539640008CBCB /* GistDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C9B1A12C0539640008CBCB /* GistDetailsViewController.swift */; };
+		B0C9B1A32C053C920008CBCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CBE9252C04B7200006F5A9 /* Main.storyboard */; };
+		B0C9B1A52C05A51E0008CBCB /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C9B1A42C05A51E0008CBCB /* UIImageView+Extension.swift */; };
+		B0C9B1A92C05AFA90008CBCB /* LoadMoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C9B1A82C05AFA90008CBCB /* LoadMoreCell.xib */; };
+		B0C9B1AC2C05B01F0008CBCB /* GistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C9B1AA2C05B01F0008CBCB /* GistCell.swift */; };
+		B0C9B1AD2C05B01F0008CBCB /* LoadMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C9B1AB2C05B01F0008CBCB /* LoadMoreCell.swift */; };
 		B0CBE9202C04B7200006F5A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBE91F2C04B7200006F5A9 /* AppDelegate.swift */; };
 		B0CBE9222C04B7200006F5A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBE9212C04B7200006F5A9 /* SceneDelegate.swift */; };
-		B0CBE9242C04B7200006F5A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBE9232C04B7200006F5A9 /* ViewController.swift */; };
+		B0CBE9242C04B7200006F5A9 /* GistListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBE9232C04B7200006F5A9 /* GistListViewController.swift */; };
 		B0CBE9272C04B7200006F5A9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B0CBE9262C04B7200006F5A9 /* Base */; };
 		B0CBE9292C04B7230006F5A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0CBE9282C04B7230006F5A9 /* Assets.xcassets */; };
 		B0CBE92C2C04B7230006F5A9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B0CBE92B2C04B7230006F5A9 /* Base */; };
@@ -36,10 +50,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B00DB2B22C05000C00F67CB3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B039CEBC2C04DF4700C02483 /* GistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistViewModel.swift; sourceTree = "<group>"; };
+		B039CEBE2C04DFD800C02483 /* ClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientProtocol.swift; sourceTree = "<group>"; };
+		B039CEC22C04E01400C02483 /* GistAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistAPIClient.swift; sourceTree = "<group>"; };
+		B039CEC42C04E7CA00C02483 /* GistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistModel.swift; sourceTree = "<group>"; };
+		B039CEC62C04EEB300C02483 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		B0549F052C0510E700BA388B /* GistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GistCell.xib; sourceTree = "<group>"; };
+		B0C9B1A12C0539640008CBCB /* GistDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistDetailsViewController.swift; sourceTree = "<group>"; };
+		B0C9B1A42C05A51E0008CBCB /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		B0C9B1A82C05AFA90008CBCB /* LoadMoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadMoreCell.xib; sourceTree = "<group>"; };
+		B0C9B1AA2C05B01F0008CBCB /* GistCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GistCell.swift; sourceTree = "<group>"; };
+		B0C9B1AB2C05B01F0008CBCB /* LoadMoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMoreCell.swift; sourceTree = "<group>"; };
 		B0CBE91C2C04B7200006F5A9 /* GitHubGists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubGists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0CBE91F2C04B7200006F5A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0CBE9212C04B7200006F5A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B0CBE9232C04B7200006F5A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0CBE9232C04B7200006F5A9 /* GistListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListViewController.swift; sourceTree = "<group>"; };
 		B0CBE9262C04B7200006F5A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0CBE9282C04B7230006F5A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0CBE92B2C04B7230006F5A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0549F0D2C05193F00BA388B /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +103,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B00DB2B62C05060800F67CB3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B039CEBC2C04DF4700C02483 /* GistViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B00DB2B72C05065800F67CB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B039CEC42C04E7CA00C02483 /* GistModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B00DB2B82C05065E00F67CB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B0C9B1AA2C05B01F0008CBCB /* GistCell.swift */,
+				B0C9B1AB2C05B01F0008CBCB /* LoadMoreCell.swift */,
+				B0CBE9252C04B7200006F5A9 /* Main.storyboard */,
+				B0549F052C0510E700BA388B /* GistCell.xib */,
+				B0C9B1A82C05AFA90008CBCB /* LoadMoreCell.xib */,
+				B0CBE92A2C04B7230006F5A9 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B00DB2B92C0506A500F67CB3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0C9B1A12C0539640008CBCB /* GistDetailsViewController.swift */,
+				B0CBE9232C04B7200006F5A9 /* GistListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B00DB2BA2C0506BD00F67CB3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B039CEBE2C04DFD800C02483 /* ClientProtocol.swift */,
+				B039CEC22C04E01400C02483 /* GistAPIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B00DB2BB2C0506DF00F67CB3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B00DB2B22C05000C00F67CB3 /* Constants.swift */,
+				B039CEC62C04EEB300C02483 /* DataError.swift */,
+				B0C9B1A42C05A51E0008CBCB /* UIImageView+Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B0549F0B2C05193F00BA388B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B0CBE9132C04B7200006F5A9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +174,7 @@
 				B0CBE9352C04B7230006F5A9 /* GitHubGistsTests */,
 				B0CBE93F2C04B7230006F5A9 /* GitHubGistsUITests */,
 				B0CBE91D2C04B7200006F5A9 /* Products */,
+				B0549F0B2C05193F00BA388B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +191,15 @@
 		B0CBE91E2C04B7200006F5A9 /* GitHubGists */ = {
 			isa = PBXGroup;
 			children = (
-				B0CBE91F2C04B7200006F5A9 /* AppDelegate.swift */,
 				B0CBE9212C04B7200006F5A9 /* SceneDelegate.swift */,
-				B0CBE9232C04B7200006F5A9 /* ViewController.swift */,
-				B0CBE9252C04B7200006F5A9 /* Main.storyboard */,
+				B0CBE91F2C04B7200006F5A9 /* AppDelegate.swift */,
+				B00DB2BB2C0506DF00F67CB3 /* Helpers */,
+				B00DB2BA2C0506BD00F67CB3 /* Networking */,
+				B00DB2B92C0506A500F67CB3 /* ViewControllers */,
+				B00DB2B82C05065E00F67CB3 /* View */,
+				B00DB2B72C05065800F67CB3 /* Model */,
+				B00DB2B62C05060800F67CB3 /* ViewModel */,
 				B0CBE9282C04B7230006F5A9 /* Assets.xcassets */,
-				B0CBE92A2C04B7230006F5A9 /* LaunchScreen.storyboard */,
 				B0CBE92D2C04B7230006F5A9 /* Info.plist */,
 			);
 			path = GitHubGists;
@@ -143,6 +238,9 @@
 			dependencies = (
 			);
 			name = GitHubGists;
+			packageProductDependencies = (
+				B0549F0C2C05193F00BA388B /* Kingfisher */,
+			);
 			productName = GitHubGists;
 			productReference = B0CBE91C2C04B7200006F5A9 /* GitHubGists.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +313,9 @@
 				Base,
 			);
 			mainGroup = B0CBE9132C04B7200006F5A9;
+			packageReferences = (
+				B0549F0A2C05189900BA388B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = B0CBE91D2C04B7200006F5A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +332,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C9B1A92C05AFA90008CBCB /* LoadMoreCell.xib in Resources */,
+				B0549F062C0510E700BA388B /* GistCell.xib in Resources */,
+				B0C9B1A32C053C920008CBCB /* Main.storyboard in Resources */,
 				B0CBE9292C04B7230006F5A9 /* Assets.xcassets in Resources */,
 				B0CBE92C2C04B7230006F5A9 /* Base in Resources */,
 				B0CBE9272C04B7200006F5A9 /* Base in Resources */,
@@ -258,9 +362,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0CBE9242C04B7200006F5A9 /* ViewController.swift in Sources */,
+				B0C9B1A22C0539640008CBCB /* GistDetailsViewController.swift in Sources */,
+				B039CEBF2C04DFD800C02483 /* ClientProtocol.swift in Sources */,
+				B0CBE9242C04B7200006F5A9 /* GistListViewController.swift in Sources */,
+				B039CEC32C04E01400C02483 /* GistAPIClient.swift in Sources */,
+				B039CEBD2C04DF4700C02483 /* GistViewModel.swift in Sources */,
+				B0C9B1A52C05A51E0008CBCB /* UIImageView+Extension.swift in Sources */,
+				B039CEC52C04E7CA00C02483 /* GistModel.swift in Sources */,
 				B0CBE9202C04B7200006F5A9 /* AppDelegate.swift in Sources */,
+				B0C9B1AC2C05B01F0008CBCB /* GistCell.swift in Sources */,
+				B039CEC72C04EEB300C02483 /* DataError.swift in Sources */,
 				B0CBE9222C04B7200006F5A9 /* SceneDelegate.swift in Sources */,
+				B00DB2B32C05000C00F67CB3 /* Constants.swift in Sources */,
+				B0C9B1AD2C05B01F0008CBCB /* LoadMoreCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +564,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,6 +593,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -607,6 +723,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B0549F0A2C05189900BA388B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B0549F0C2C05193F00BA388B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B0549F0A2C05189900BA388B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B0CBE9142C04B7200006F5A9 /* Project object */;
 }

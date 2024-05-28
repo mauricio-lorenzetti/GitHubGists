@@ -6,31 +6,54 @@
 //
 
 import XCTest
+import Combine
 @testable import GitHubGists
 
 final class GitHubGistsTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+    var sut: GistViewModel!
+    var mockNetworkClient: MockNetworkClient!
+    
+    override func setUp() {
+        super.setUp()
+        mockNetworkClient = MockNetworkClient()
+        sut = GistViewModel(networkClient: mockNetworkClient)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        sut = nil
+        mockNetworkClient = nil
+        super.tearDown()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testFetchGists() {
+        // Prepare mock data and expectations
+        let mockGistList = [GistModel(filesCount: "2", login: "TestUser", avatarURL: URL(string: "https://example.com/avatar.png")!, htmlURL: URL(string: "https://example.com/gist")!)]
+        
+        mockNetworkClient.mockResponse = mockGistList
+        
+        // Call the method under test
+        sut.fetchGists()
+        
+        // Assert the state and gistList after completion
+        XCTAssertEqual(sut.state, .loaded)
+        XCTAssertEqual(sut.gistList, mockGistList)
     }
+}
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+// Mock NetworkClient for testing
+class MockNetworkClient: ClientProtocol {
+    var mockResponse: [GistModel]?
+    
+    func getClientData(page: Int) -> Future<[GistModel], DataError> {
+        if let mockResponse = mockResponse {
+            return Future { promise in
+                promise(.success(mockResponse))
+            }
+        } else {
+            return Future { promise in
+                promise(.failure(.networkError(description: "Mock Network Error")))
+            }
         }
     }
-
 }

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GistCell" rowHeight="144" id="Ih8-I6-0v6" customClass="GistCell" customModule="GitHubGists" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="479" height="144"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ih8-I6-0v6" id="LZ4-iX-t50">
+                <rect key="frame" x="0.0" y="0.0" width="479" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDO-AL-QNp">
+                        <rect key="frame" x="425.66666666666669" y="63.666666666666657" width="35.333333333333314" height="17"/>
+                        <accessibility key="accessibilityConfiguration" identifier="filesCountLabel"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kMG-w4-Ny7">
+                        <rect key="frame" x="0.0" y="0.0" width="144" height="144"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="kMG-w4-Ny7" secondAttribute="height" multiplier="1:1" id="uem-aw-Qav"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyc-dY-Nnc">
+                        <rect key="frame" x="190" y="63.666666666666657" width="35.333333333333343" height="17"/>
+                        <accessibility key="accessibilityConfiguration" identifier="loginLabel"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doc.fill.badge.plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JZa-s5-dmm" userLabel="file_icon">
+                        <rect key="frame" x="397.66666666666669" y="63.333333333333329" width="21.333333333333314" height="20.333333333333329"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="JZa-s5-dmm" secondAttribute="height" multiplier="1:1" id="aU4-YR-paH"/>
+                            <constraint firstAttribute="height" constant="18" id="z87-Ry-92e"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mvA-MI-tmG" userLabel="user_icon">
+                        <rect key="frame" x="162" y="64" width="20" height="16.666666666666657"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Mds-Xv-ZcX"/>
+                            <constraint firstAttribute="width" secondItem="mvA-MI-tmG" secondAttribute="height" multiplier="1:1" id="WaK-8S-45a"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eyc-dY-Nnc" firstAttribute="leading" secondItem="mvA-MI-tmG" secondAttribute="trailing" constant="8" id="6Mm-S6-O2h"/>
+                    <constraint firstItem="uDO-AL-QNp" firstAttribute="centerY" secondItem="LZ4-iX-t50" secondAttribute="centerY" id="B00-yT-Fhh"/>
+                    <constraint firstItem="kMG-w4-Ny7" firstAttribute="height" secondItem="LZ4-iX-t50" secondAttribute="height" id="DLr-Ht-U6V"/>
+                    <constraint firstItem="eyc-dY-Nnc" firstAttribute="centerY" secondItem="LZ4-iX-t50" secondAttribute="centerY" id="Ele-gJ-lpb"/>
+                    <constraint firstItem="mvA-MI-tmG" firstAttribute="leading" secondItem="kMG-w4-Ny7" secondAttribute="trailing" constant="18" id="Imb-N7-OUM"/>
+                    <constraint firstItem="JZa-s5-dmm" firstAttribute="centerY" secondItem="LZ4-iX-t50" secondAttribute="centerY" id="NhZ-6k-RYd"/>
+                    <constraint firstItem="kMG-w4-Ny7" firstAttribute="leading" secondItem="LZ4-iX-t50" secondAttribute="leading" id="OpG-rt-BDd"/>
+                    <constraint firstAttribute="trailing" secondItem="uDO-AL-QNp" secondAttribute="trailing" constant="18" id="Tse-1A-7dh"/>
+                    <constraint firstItem="mvA-MI-tmG" firstAttribute="centerY" secondItem="LZ4-iX-t50" secondAttribute="centerY" id="WYv-dI-DPH"/>
+                    <constraint firstItem="kMG-w4-Ny7" firstAttribute="centerY" secondItem="LZ4-iX-t50" secondAttribute="centerY" id="a7L-ck-pMm"/>
+                    <constraint firstAttribute="trailing" secondItem="JZa-s5-dmm" secondAttribute="trailing" constant="60" id="opH-Cs-2cI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImageView" destination="kMG-w4-Ny7" id="zEf-A0-Z4W"/>
+                <outlet property="filesCountLabel" destination="uDO-AL-QNp" id="ypq-K1-Crc"/>
+                <outlet property="loginLabel" destination="eyc-dY-Nnc" id="YG4-LG-3W4"/>
+            </connections>
+            <point key="canvasLocation" x="121.37404580152672" y="-377.46478873239437"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="doc.fill.badge.plus" catalog="system" width="120" height="128"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+    </resources>
+</document>

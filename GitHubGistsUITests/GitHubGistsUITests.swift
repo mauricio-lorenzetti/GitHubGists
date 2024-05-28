@@ -8,26 +8,43 @@
 import XCTest
 
 final class GitHubGistsUITests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
+        
+    var app: XCUIApplication!
+    
+    override func setUp() {
+        super.setUp()
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
+        app = XCUIApplication()
         app.launch()
+    }
+    
+    override func tearDown() {
+        app = nil
+        super.tearDown()
+    }
+    
+    func testGistListDisplay() throws {
+        // Wait for table view to appear
+        let tableView = app.tables["gistTableView"]
+        XCTAssertTrue(tableView.exists)
+        
+        // Testing if there is at least one cell
+        let firstCell = tableView.cells.element(matching: .cell, identifier: "gistCell_0")
+        XCTAssertTrue(firstCell.exists)
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // Testing cell has labels
+        let loginLabel = firstCell.staticTexts["loginLabel"]
+        XCTAssertTrue(loginLabel.exists)
+
+        let filesCountLabel = firstCell.staticTexts["filesCountLabel"]
+        XCTAssertTrue(filesCountLabel.exists)
+        
+        // Tap on the first cell to navigate to details screen
+        firstCell.tap()
+        
+        // Testing if appropriate navigation transition happens
+        let gistDetailsNavigationBar = app.navigationBars["gistDetails"]
+        XCTAssertTrue(gistDetailsNavigationBar.exists)
     }
 
     func testLaunchPerformance() throws {
